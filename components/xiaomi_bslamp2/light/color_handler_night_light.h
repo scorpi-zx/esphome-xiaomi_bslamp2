@@ -38,8 +38,10 @@ class ColorHandlerNightLight : public ColorHandler {
     // matches the night light of the original firmware.
     if (v.get_color_mode() == light::ColorMode::COLOR_TEMPERATURE) {
       red = 0.968f;
-      green = 0.968f;
-      blue = 0.972f;
+    // green = 0.968f;
+      green = 0.964f;
+    // blue = 0.972f;
+      blue = 0.968f;
       white = 0.0f;
     }
     // In RGB mode, the selected color is used to give the night light a
