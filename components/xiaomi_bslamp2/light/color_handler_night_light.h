@@ -42,7 +42,7 @@ class ColorHandlerNightLight : public ColorHandler {
     // green = 0.968f;
       green = 0.960f;
     // blue = 0.972f;
-      blue = 0.958f;
+      blue = 0.960f;
       white = 0.0f;
     }
     // In RGB mode, the selected color is used to give the night light a
