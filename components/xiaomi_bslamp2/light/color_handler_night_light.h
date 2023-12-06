@@ -41,7 +41,7 @@ class ColorHandlerNightLight : public ColorHandler {
     // green = 0.968f;
       green = 0.960f;
     // blue = 0.972f;
-      blue = 0.956f;
+      blue = 0.952f;
       white = 0.0f;
     }
     // In RGB mode, the selected color is used to give the night light a
@@ -51,7 +51,7 @@ class ColorHandlerNightLight : public ColorHandler {
       red = esphome::lerp(v.get_red(), 0.9997f, 0.9680f);
       green = esphome::lerp(v.get_green(), 0.9997f, 0.9600f);
       auto blue_scale = (v.get_red() + v.get_green()) / 2.0f;
-      auto blue_max = esphome::lerp(blue_scale, 0.9640f, 0.9560f);
+      auto blue_max = esphome::lerp(blue_scale, 0.9640f, 0.9520f);
       blue = esphome::lerp(v.get_blue(), 0.9997f, blue_max);
       white = 0.0f;
     }
